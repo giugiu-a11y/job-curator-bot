@@ -1,0 +1,235 @@
+"""
+Job Curator Bot - Job Analyzer (Claude AI)
+Analisa vagas com os critérios M60/UDI
+"""
+import json
+import time
+import logging
+from typing import Optional
+from pathlib import Path
+from dotenv import load_dotenv
+
+import anthropic
+
+# Carrega .env
+load_dotenv(Path(__file__).parent / '.env')
+
+from config import (
+    CLAUDE_API_KEY,
+    SALARY_HIGH_THRESHOLD,
+    REJECTION_TERMS,
+    JOB_CATEGORIES
+)
+
+logger = logging.getLogger(__name__)
+
+# Prompt do sistema com critérios M60
+SYSTEM_PROMPT = f"""Você é um curador especialista em vagas de trabalho remoto para brasileiros que querem trabalhar para empresas internacionais.
+
+## SUA TAREFA
+Analise a vaga abaixo e decida se deve ser APROVADA ou REJEITADA com base nos critérios da M60/UDI.
+
+## CRITÉRIOS DE REJEIÇÃO IMEDIATA (se qualquer um for verdadeiro, REJEITE)
+
+### 1. Restrição Geográfica
+REJEITAR se contiver QUALQUER um destes termos (ou variações):
+{', '.join(f'"{t}"' for t in REJECTION_TERMS[:10])}
+... e similares.
+
+A vaga deve aceitar candidatos internacionais/globais OU não mencionar restrição.
+
+### 2. Esquemas Suspeitos
+REJEITAR se for:
+- MLM / Marketing multinível
+- Comissão pura sem salário base
+- "Seja seu próprio chefe" / esquemas de pirâmide
+- Vagas muito vagas sem empresa identificável
+
+### 3. Vagas Genéricas
+REJEITAR se:
+- Não identificar claramente a empresa
+- For um "pool" de candidatos sem vaga específica
+
+## CRITÉRIOS DE APROVAÇÃO
+
+### 1. Geografia Aceita
+- Worldwide / Global / Remote / Anywhere
+- USA, Canadá, Europa, Ásia, Austrália, NZ
+- LATAM / Brasil (se empresa internacional)
+- Não menciona restrição geográfica específica
+
+### 2. Salário
+- Priorizar vagas > USD ${SALARY_HIGH_THRESHOLD}/mês
+- Mas aceitar vagas menores se cumprirem outros requisitos
+- Inferir salário se possível (ex: "competitive salary for senior role" = provavelmente > $4k)
+
+### 3. Mix de Acessibilidade
+Aceitar diversidade:
+- Com e sem inglês fluente exigido
+- Com e sem diploma universitário
+- Diferentes níveis de experiência
+
+## CATEGORIAS
+Classifique em uma destas: {', '.join(JOB_CATEGORIES)}
+
+## FORMATO DE RESPOSTA
+Responda APENAS com JSON válido, sem markdown:
+
+{{
+    "aprovada": true/false,
+    "motivo_rejeicao": "string explicando porque foi rejeitada, ou null se aprovada",
+    "accepts_international": true/false,
+    "categoria": "uma das categorias listadas",
+    "nivel": "Junior|Pleno|Senior|Lead|Executive|Qualquer",
+    "requer_ingles_fluente": true/false/null,
+    "requer_diploma": true/false/null,
+    "salario_estimado_usd_mes": numero ou null,
+    "is_high_salary": true se > ${SALARY_HIGH_THRESHOLD}/mês (real ou inferido),
+    "empresa": "Nome da empresa",
+    "titulo_pt": "Título traduzido para português",
+    "resumo_pt": "Resumo atraente de 1-2 linhas em português (máx 150 chars)",
+    "tags": ["lista", "de", "tags", "relevantes"],
+    "confianca": 0.0-1.0 (quão confiante você está na análise)
+}}
+
+IMPORTANTE:
+- Responda APENAS o JSON, sem texto adicional
+- Se não tiver certeza sobre salário, infira com base no cargo/senioridade
+- O resumo deve ser profissional mas atraente para brasileiros"""
+
+
+def init_claude():
+    """Inicializa o cliente Claude"""
+    if not CLAUDE_API_KEY:
+        raise ValueError("ANTHROPIC_API_KEY não configurada")
+    return anthropic.Anthropic(api_key=CLAUDE_API_KEY)
+
+
+def analyze_job(job: dict, client) -> Optional[dict]:
+    """
+    Analisa uma vaga com Claude AI.
+    
+    Args:
+        job: dict com dados da vaga (title, company, description, etc)
+        client: instância do cliente Anthropic
+    
+    Returns:
+        dict com resultado da análise ou None se falhar
+    """
+    # Monta o texto da vaga para análise
+    job_text = f"""
+TÍTULO: {job.get('title', 'N/A')}
+EMPRESA: {job.get('company', 'N/A')}
+LOCALIZAÇÃO: {job.get('location', 'N/A')}
+FONTE: {job.get('source_url', 'N/A')}
+
+DESCRIÇÃO:
+{job.get('description', 'N/A')[:4000]}
+"""
+    
+    try:
+        # Chama o Claude
+        response = client.messages.create(
+            model="claude-haiku-4-5",
+            max_tokens=1024,
+            system=SYSTEM_PROMPT,
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"VAGA PARA ANÁLISE:\n{job_text}"
+                }
+            ]
+        )
+        
+        # Parse do JSON
+        result_text = response.content[0].text.strip()
+        
+        # Remove possíveis marcadores de código
+        if result_text.startswith('```'):
+            result_text = result_text.split('\n', 1)[1] if '\n' in result_text else result_text[3:]
+        if result_text.endswith('```'):
+            result_text = result_text.rsplit('\n', 1)[0] if '\n' in result_text else result_text[:-3]
+        result_text = result_text.replace('```json', '').replace('```', '').strip()
+        
+        # Parse JSON
+        result = json.loads(result_text)
+        
+        # Adiciona metadados
+        result['job_id'] = job.get('id')
+        result['analyzed'] = True
+        
+        return result
+        
+    except json.JSONDecodeError as e:
+        logger.error(f"Erro ao parsear JSON do Claude para job {job.get('id')}: {e}")
+        logger.debug(f"Resposta raw: {result_text[:500] if 'result_text' in locals() else 'N/A'}")
+        return None
+    except Exception as e:
+        logger.error(f"Erro ao analisar job {job.get('id')}: {e}")
+        return None
+
+
+def batch_analyze_jobs(jobs: list, model=None) -> list:
+    """
+    Analisa múltiplas vagas em batch.
+    
+    Args:
+        jobs: lista de dicts com dados das vagas
+        model: instância do modelo Gemini (cria se não fornecido)
+    
+    Returns:
+        lista de resultados de análise
+    """
+    if model is None:
+        model = "claude-haiku-4-5"  # gemini desativado
+    
+    results = []
+    
+    for i, job in enumerate(jobs):
+        logger.info(f"[{i+1}/{len(jobs)}] Analisando: {job.get('title', 'N/A')[:50]}")
+        
+        result = analyze_job(job, model)
+        
+        if result:
+            results.append(result)
+            status = "✅ Aprovada" if result.get('aprovada') else f"❌ Rejeitada: {result.get('motivo_rejeicao', 'N/A')[:50]}"
+            logger.info(f"  {status}")
+        else:
+            logger.warning(f"  ⚠️ Falha na análise")
+        
+        # Rate limiting
+        time.sleep(GEMINI_DELAY)
+    
+    # Estatísticas
+    approved = sum(1 for r in results if r.get('aprovada'))
+    rejected = len(results) - approved
+    logger.info(f"Análise concluída: {approved} aprovadas, {rejected} rejeitadas")
+    
+    return results
+
+
+def quick_reject_check(job: dict) -> Optional[str]:
+    """
+    Verificação rápida de rejeição (sem usar IA).
+    Útil para pré-filtrar antes de gastar tokens do Gemini.
+    
+    Returns:
+        None se passou no pré-filtro, ou string com motivo de rejeição
+    """
+    text_to_check = ' '.join([
+        job.get('title', ''),
+        job.get('description', ''),
+        job.get('location', ''),
+    ]).lower()
+    
+    # Verifica termos de rejeição
+    for term in REJECTION_TERMS:
+        if term.lower() in text_to_check:
+            return f"Termo de rejeição encontrado: {term}"
+    
+    # Verifica se tem empresa identificada
+    if not job.get('company') or job.get('company', '').lower() in ['n/a', 'unknown', 'confidential']:
+        # Não rejeita automaticamente, mas marca para análise mais cuidadosa
+        pass
+    
+    return None  # Passou no pré-filtro

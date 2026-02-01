@@ -1,0 +1,36 @@
+# Job Curator Bot - Docker Compose
+version: '3.8'
+
+services:
+  job-curator:
+    build: .
+    container_name: job-curator-bot
+    restart: unless-stopped
+    
+    # Variáveis de ambiente do arquivo .env
+    env_file:
+      - .env
+    
+    # Volumes para persistência
+    volumes:
+      - ./data:/app/data
+    
+    # Timezone
+    environment:
+      - TZ=America/Sao_Paulo
+      - DATA_DIR=/app/data
+    
+    # Logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+    
+    # Recursos (ajuste conforme necessário)
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 128M

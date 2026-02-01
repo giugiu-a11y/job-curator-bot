@@ -1,0 +1,7 @@
+#!/bin/bash
+set -euo pipefail
+cd /home/ubuntu/projects/job-curator-bot
+set -a; [ -f .env ] && source .env; set +a
+set -euo pipefail
+cd /home/ubuntu/projects/job-curator-bot
+python3 post_job.py 1

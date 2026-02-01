@@ -1,0 +1,18 @@
+# Job Curator Bot - Dependencies
+# Core
+requests==2.31.0
+feedparser==6.0.11
+beautifulsoup4==4.12.3
+lxml==5.1.0
+
+# AI
+anthropic==0.25.0
+
+# Telegram
+python-telegram-bot==21.6
+
+# Scheduling
+schedule==1.2.2
+
+# Utils
+python-dotenv==1.0.0
