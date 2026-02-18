@@ -1,0 +1,304 @@
+{
+  "generated_at": 1770153853.837377,
+  "count": 43,
+  "items": [
+    {
+      "titulo": "Engenheiro de Software Sênior, Plataforma de Dados",
+      "empresa": "Netflix",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://jobs.netflix.com/jobs/29968830",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Gerente de Produto, Experiência do Desenvolvedor",
+      "empresa": "Stripe",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://jobs.stripe.com/jobs/321890001",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Cientista de Dados, Machine Learning",
+      "empresa": "Google",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://careers.google.com/jobs/results/139876543210987654"
+    },
+    {
+      "titulo": "Engenheiro de Software, Backend",
+      "empresa": "Shopify",
+      "pais": "Canadá",
+      "url_oficial": "https://www.shopify.com/careers/software-engineer-backend-12345",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Designer UX/UI",
+      "empresa": "Spotify",
+      "pais": "Suécia",
+      "url_oficial": "https://www.spotifyjobs.com/design/uxui-designer-stockholm-67890",
+      "rejeitada": "url_nao_direta"
+    },
+    {
+      "titulo": "Engenheiro de Software, Frontend",
+      "empresa": "ASML",
+      "pais": "Países Baixos",
+      "url_oficial": "https://www.asml.com/en/careers/vacancies/software-engineer-frontend-amsterdam-11223",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Analista de Segurança da Informação",
+      "empresa": "Siemens",
+      "pais": "Alemanha",
+      "url_oficial": "https://new.siemens.com/global/en/company/jobs/vacancies.html?id=1234567890",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Machine Learning",
+      "empresa": "Meta",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://www.metacareers.com/jobs/1234567890123456",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software, Full Stack",
+      "empresa": "Atlassian",
+      "pais": "Austrália",
+      "url_oficial": "https://www.atlassian.com/company/careers/all-jobs/software-engineer-full-stack-sydney-98765",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Gerente de Projetos de TI",
+      "empresa": "Ericsson",
+      "pais": "Reino Unido",
+      "url_oficial": "https://www.ericsson.com/en/careers/job-opportunities/job-details?id=1234567890",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Engenheiro de Software Sênior, Plataforma de Dados",
+      "empresa": "Netflix",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://jobs.netflix.com/jobs/28080607",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Gerente de Produto, Experiência do Desenvolvedor",
+      "empresa": "Stripe",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://jobs.stripe.com/jobs/1234567",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Frontend",
+      "empresa": "Shopify",
+      "pais": "Canadá",
+      "url_oficial": "https://www.shopify.com/careers/frontend-engineer-12345",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Engenheiro de Software, Backend",
+      "empresa": "Spotify",
+      "pais": "Suécia",
+      "url_oficial": "https://www.spotifyjobs.com/job/backend-software-engineer-123456",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Analista de Segurança da Informação",
+      "empresa": "Siemens",
+      "pais": "Alemanha",
+      "url_oficial": "https://new.siemens.com/global/en/company/jobs/job-search.html?jobid=123456789",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de DevOps",
+      "empresa": "Atlassian",
+      "pais": "Austrália",
+      "url_oficial": "https://www.atlassian.com/company/careers/all-jobs/devops-engineer-12345",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Designer UX/UI",
+      "empresa": "Adobe",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://www.adobe.com/careers/search.html?jobId=1234567890",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Engenheiro de Machine Learning",
+      "empresa": "Meta",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://www.metacareers.com/jobs/123456789012345/",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software, Full Stack",
+      "empresa": "Microsoft",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://careers.microsoft.com/us/en/job/123456789/Full-Stack-Software-Engineer"
+    },
+    {
+      "titulo": "Engenheiro de Software Sênior, Plataforma de Dados",
+      "empresa": "Netflix",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://jobs.netflix.com/jobs/290000000",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Gerente de Produto, Experiência do Desenvolvedor",
+      "empresa": "Stripe",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://jobs.stripe.com/jobs/123456789",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software, Frontend",
+      "empresa": "Shopify",
+      "pais": "Canadá",
+      "url_oficial": "https://www.shopify.com/careers/software-engineer-frontend-12345",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Designer UX/UI",
+      "empresa": "Spotify",
+      "pais": "Suécia",
+      "url_oficial": "https://www.spotifyjobs.com/job/123456789-ux-ui-designer",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software, Backend",
+      "empresa": "Amazon",
+      "pais": "Reino Unido",
+      "url_oficial": "https://www.amazon.jobs/en/jobs/123456789/software-development-engineer-backend",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de DevOps",
+      "empresa": "Atlassian",
+      "pais": "Austrália",
+      "url_oficial": "https://www.atlassian.com/company/careers/all-jobs/devops-engineer-12345",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Gerente de Projetos de TI",
+      "empresa": "Siemens",
+      "pais": "Alemanha",
+      "url_oficial": "https://new.siemens.com/global/en/company/jobs/job-search.html?id=123456789",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Segurança Cibernética",
+      "empresa": "IBM",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://careers.ibm.com/job/123456789-cybersecurity-engineer",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software Sênior, Plataforma de Dados",
+      "empresa": "Netflix",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://jobs.netflix.com/jobs/270000000",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Cientista de Dados, Machine Learning",
+      "empresa": "Meta",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://www.metacareers.com/jobs/20000000000000000000/",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software, Frontend",
+      "empresa": "Shopify",
+      "pais": "Canadá",
+      "url_oficial": "https://www.shopify.com/careers/engineering/frontend/20000000000000000000",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Desenvolvedor Full Stack",
+      "empresa": "Spotify",
+      "pais": "Suécia",
+      "url_oficial": "https://www.spotifyjobs.com/job/20000000000000000000/",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Machine Learning",
+      "empresa": "DeepMind",
+      "pais": "Reino Unido",
+      "url_oficial": "https://deepmind.google/careers/job/20000000000000000000/",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software, Backend",
+      "empresa": "Atlassian",
+      "pais": "Austrália",
+      "url_oficial": "https://www.atlassian.com/careers/job/20000000000000000000",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Dados",
+      "empresa": "Databricks",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://www.databricks.com/company/careers/job/20000000000000000000",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software, Infraestrutura",
+      "empresa": "Amazon",
+      "pais": "Estados Unidos",
+      "url_oficial": "https://www.amazon.jobs/en/jobs/20000000000000000000/software-development-engineer-iii-infrastructure",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Cientista de Dados",
+      "empresa": "Meta",
+      "pais": "EUA",
+      "url_oficial": "https://www.metacareers.com/jobs/?search_filters=job_title%3DCientista%20de%20Dados",
+      "rejeitada": "url_listagem"
+    },
+    {
+      "titulo": "Desenvolvedor Front-end",
+      "empresa": "Amazon",
+      "pais": "EUA",
+      "url_oficial": "https://www.amazon.jobs/en/jobs/2485159/front-end-developer",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Machine Learning",
+      "empresa": "NVIDIA",
+      "pais": "EUA",
+      "url_oficial": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Machine-Learning-Engineer_23000000"
+    },
+    {
+      "titulo": "Engenheiro de Software",
+      "empresa": "Apple",
+      "pais": "EUA",
+      "url_oficial": "https://jobs.apple.com/en-us/details/200300277/software-engineer-machine-learning",
+      "rejeitada": "url_nao_direta"
+    },
+    {
+      "titulo": "Engenheiro de Software",
+      "empresa": "Salesforce",
+      "pais": "EUA",
+      "url_oficial": "https://salesforce.wd1.myworkdayjobs.com/en-US/Salesforce_External/job/USA-California-San-Francisco/Software-Engineer--Platform_JR106319",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software",
+      "empresa": "Netflix",
+      "pais": "EUA",
+      "url_oficial": "https://jobs.netflix.com/jobs/2485159",
+      "rejeitada": "url_inativa"
+    },
+    {
+      "titulo": "Engenheiro de Software",
+      "empresa": "Shopify",
+      "pais": "Canadá",
+      "url_oficial": "https://www.shopify.com/careers/software-engineer-backend-100000",
+      "rejeitada": "url_nao_especifica"
+    },
+    {
+      "titulo": "Engenheiro de Software",
+      "empresa": "Datadog",
+      "pais": "EUA",
+      "url_oficial": "https://boards.greenhouse.io/datadog/jobs/5987671002",
+      "rejeitada": "url_nao_empresa"
+    }
+  ]
+}

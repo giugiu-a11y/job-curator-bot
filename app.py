@@ -42,7 +42,7 @@ from config import (
 )
 import database as db
 from scrapers import get_all_scrapers
-from job_analyzer import init_claude, analyze_job, quick_reject_check, batch_analyze_jobs
+from job_analyzer import analyze_job, quick_reject_check, batch_analyze_jobs
 from link_resolver import resolve_direct_url, verify_url_is_active  # verify_url_is_active usado em run_posting()
 from telegram_poster import (
     post_jobs_to_free_channel,
@@ -119,13 +119,13 @@ async def run_analysis():
         logger.info("Nenhuma vaga pendente para analisar")
         return 0, 0
     
-    client = init_claude()
+    # init_claude() removido - analyze_job usa Akira-Pipe (Gemini) internamente
     approved = 0
     rejected = 0
     
     for job in pending:
         try:
-            result = analyze_job(job, client)
+            result = analyze_job(job)
             
             if not result:
                 logger.warning(f"  Falha na análise: {job.get('title', 'N/A')[:40]}")

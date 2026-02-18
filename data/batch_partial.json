@@ -1,0 +1,441 @@
+{
+  "generated_at": "2026-02-03T18:02:14.502570Z",
+  "count": 15,
+  "items": [
+    {
+      "id": "brave-2554894303546879310",
+      "title": "Jobs",
+      "company": "Rula",
+      "description": "You need to enable JavaScript to run this app",
+      "source_url": "https://jobs.ashbyhq.com/rula/c7aafe5c-fc02-4b05-a5bd-d79b7681599e/application",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://jobs.ashbyhq.com/rula/c7aafe5c-fc02-4b05-a5bd-d79b7681599e/application",
+      "analysis": {
+        "job_index": 0,
+        "aprovada": false,
+        "motivo_rejeicao": "A descrição da vaga não fornece informações suficientes para análise.",
+        "titulo": "Jobs",
+        "empresa": "Rula",
+        "pais": "nao_especificado",
+        "setor": "nao_especificado",
+        "salario_usd_mes": 0,
+        "salario_estimado": false,
+        "requisitos": {
+          "ingles": "nao_precisa",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 0,
+          "descricao": "Nenhuma descrição disponível."
+        },
+        "internacional_ok": false
+      }
+    },
+    {
+      "id": "brave-4433307057227760694",
+      "title": "Software Engineer II - Fullstack (Remote, United States)",
+      "company": "The%20zebra",
+      "description": "You need to enable JavaScript to run this app",
+      "source_url": "https://jobs.ashbyhq.com/The%20Zebra/9912e93c-93cf-4df4-8a5b-bb634eb54361",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://jobs.ashbyhq.com/The%20Zebra/9912e93c-93cf-4df4-8a5b-bb634eb54361",
+      "analysis": {
+        "job_index": 1,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Engenheiro de Software II - Fullstack (Remoto, Estados Unidos)",
+        "empresa": "The%20zebra",
+        "pais": "EUA",
+        "setor": "tech",
+        "salario_usd_mes": 7500,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 2,
+          "descricao": "Vaga remota nos EUA para engenheiro de software fullstack."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave-6334236833693921041",
+      "title": "Customer Support Executive (Remote in United States) @ Nivoda",
+      "company": "Nivoda",
+      "description": "Customer Support Executive - United States",
+      "source_url": "https://jobs.ashbyhq.com/nivoda/12210876-fec0-4b41-8288-7d3dcc45603a",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://jobs.ashbyhq.com/nivoda/12210876-fec0-4b41-8288-7d3dcc45603a",
+      "analysis": {
+        "job_index": 2,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Customer Support Executive (Remoto nos Estados Unidos)",
+        "empresa": "Nivoda",
+        "pais": "EUA",
+        "setor": "business",
+        "salario_usd_mes": 3500,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "basico",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 0,
+          "descricao": "Vaga remota nos EUA para suporte ao cliente."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave--7641261565555431912",
+      "title": "Ramp Jobs",
+      "company": "Ramp",
+      "description": "You need to enable JavaScript to run this app",
+      "source_url": "https://jobs.ashbyhq.com/ramp/5598f7b8-4ae2-4105-a2b4-2d0f55c54c40/application",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://jobs.ashbyhq.com/ramp/5598f7b8-4ae2-4105-a2b4-2d0f55c54c40/application",
+      "analysis": {
+        "job_index": 3,
+        "aprovada": false,
+        "motivo_rejeicao": "A descrição da vaga não fornece informações suficientes para análise.",
+        "titulo": "Ramp Jobs",
+        "empresa": "Ramp",
+        "pais": "nao_especificado",
+        "setor": "nao_especificado",
+        "salario_usd_mes": 0,
+        "salario_estimado": false,
+        "requisitos": {
+          "ingles": "nao_precisa",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 0,
+          "descricao": "Nenhuma descrição disponível."
+        },
+        "internacional_ok": false
+      }
+    },
+    {
+      "id": "brave--2527624422998125458",
+      "title": "Customer Support Manager (Remote - United States) | Jobgether | Jobs By Workable",
+      "company": "Jobgether",
+      "description": "About Jobgether: Jobgether is a Talent Matching Platform that partners with companies worldwide to efficiently connect top talent with the right opportunities through AI-driven job matching .One of our companies is currently looking for a Customer ...",
+      "source_url": "https://jobs.workable.com/view/5KJZDZykHWfi2w3Hb2pub6/customer-support-manager-(remote---united-states)-in-united-states-at-jobgether",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://jobs.workable.com/view/5KJZDZykHWfi2w3Hb2pub6/customer-support-manager-(remote---united-states)-in-united-states-at-jobgether",
+      "analysis": {
+        "job_index": 4,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Gerente de Suporte ao Cliente (Remoto - Estados Unidos)",
+        "empresa": "Jobgether",
+        "pais": "EUA",
+        "setor": "business",
+        "salario_usd_mes": 5500,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "intermediario",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 2,
+          "descricao": "Vaga remota nos EUA para gerenciar suporte ao cliente."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave-3566053823515284397",
+      "title": "Remote Data Entry Clerk - NoGigiddy",
+      "company": "Nogigiddy",
+      "description": "Job Summary:We are looking for a Remote Data Entry Clerk to join our team and help us maintain accurate and up-to-date information in our databases and systems. The ideal candidate will have excellent typing skills, an eye for detail, and the ability t...",
+      "source_url": "https://apply.workable.com/nogigiddy/j/27AC761460",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://apply.workable.com/nogigiddy/j/27AC761460",
+      "analysis": {
+        "job_index": 5,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Auxiliar de Entrada de Dados Remoto",
+        "empresa": "Nogigiddy",
+        "pais": "EUA",
+        "setor": "tech",
+        "salario_usd_mes": 2500,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "intermediario",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 0,
+          "descricao": "Manter informações precisas e atualizadas em bancos de dados e sistemas."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave--6815434767453768236",
+      "title": "Area Sales Manager/Capital Sales - Device Systems Sales-(Kansas, Oklahoma, West Missouri)",
+      "company": "Philips",
+      "description": "Job Title Area Sales Manager/Capital Sales - Device Systems Sales -(Kansas, Oklahoma, West Missouri) Job Description The Area Sales Manager is responsible for leading the business development/acquisition activities to drive sales within assigned ...",
+      "source_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/United-States-of-America---Home-Based-United-States/Area--Sales-Manager-Capital-Sales---Device-Systems-Sales--Kansas--Oklahoma--West-Missouri-_569760",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/United-States-of-America---Home-Based-United-States/Area--Sales-Manager-Capital-Sales---Device-Systems-Sales--Kansas--Oklahoma--West-Missouri-_569760",
+      "analysis": {
+        "job_index": 6,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Gerente de Vendas de Área/Vendas de Capital - Vendas de Sistemas de Dispositivos",
+        "empresa": "Philips",
+        "pais": "EUA",
+        "setor": "business",
+        "salario_usd_mes": 8000,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "sim",
+          "experiencia_anos": 5,
+          "descricao": "Liderar atividades de desenvolvimento de negócios/aquisição para impulsionar vendas em áreas designadas."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave--4939710037971187577",
+      "title": "Operations Manager, The Experience Studio - North America",
+      "company": "Travelhrportal",
+      "description": "Amex GBT is a place where colleagues find inspiration in travel as a force for good and – through their work – can make an impact on our industry. We’re here to help our colleagues achieve success and offer an inclusive and collaborative culture where your voice is valued.",
+      "source_url": "https://travelhrportal.wd1.myworkdayjobs.com/en-US/Jobs/job/United-States/Operations-Manager--The-Experience-Studio---North-America_J-77893",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://travelhrportal.wd1.myworkdayjobs.com/en-US/Jobs/job/United-States/Operations-Manager--The-Experience-Studio---North-America_J-77893",
+      "analysis": {
+        "job_index": 7,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Gerente de Operações, The Experience Studio - América do Norte",
+        "empresa": "Travelhrportal",
+        "pais": "EUA",
+        "setor": "business",
+        "salario_usd_mes": 7000,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "sim",
+          "experiencia_anos": 5,
+          "descricao": "Gerenciar operações e garantir uma cultura inclusiva e colaborativa."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave--2984539838881869933",
+      "title": "Back-End Software Engineer Intern",
+      "company": "Paypal",
+      "description": "The Company PayPal has been revolutionizing commerce globally for more than 25 years. Creating innovative experiences that make moving money, selling, and shopping simple, personalized, and secure, PayPal empowers consumers and businesses in approximately 200 markets to join and thrive in the ...",
+      "source_url": "https://paypal.wd1.myworkdayjobs.com/en-US/jobs/job/San-Jose-California-United-States-of-America/Back-End-Software-Engineer-Intern_R0131019",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://paypal.wd1.myworkdayjobs.com/en-US/jobs/job/San-Jose-California-United-States-of-America/Back-End-Software-Engineer-Intern_R0131019",
+      "analysis": {
+        "job_index": 8,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Estagiário de Engenharia de Software Back-End",
+        "empresa": "Paypal",
+        "pais": "EUA",
+        "setor": "tech",
+        "salario_usd_mes": 3500,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "sim",
+          "experiencia_anos": 0,
+          "descricao": "Criar experiências inovadoras que tornam a movimentação de dinheiro, vendas e compras simples, personalizadas e seguras."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave--704318542734199847",
+      "title": "Full Stack Intern",
+      "company": "Ag",
+      "description": "Job Description: Full Stack Developer Intern (React, Python, AWS) Are you passionate about building both front-end and back-end applications? We are looking for a motivated and curious Full Stack Developer Intern to join our team.",
+      "source_url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Full-Stack-Intern_JR10367251",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://ag.wd3.myworkdayjobs.com/en-US/Airbus/job/Full-Stack-Intern_JR10367251",
+      "analysis": {
+        "job_index": 9,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Estagiário Full Stack",
+        "empresa": "Ag",
+        "pais": "EUA",
+        "setor": "tech",
+        "salario_usd_mes": 3500,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "sim",
+          "experiencia_anos": 0,
+          "descricao": "Construir aplicações front-end e back-end usando React, Python e AWS."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave-3782592788241963751",
+      "title": "Senior Data Engineer",
+      "company": "Bonterra",
+      "description": "US Base Salary Range: $75,000 - $140,000 Please note that the compensation range and benefits specified in this job posting is applicable to candidates based in the United States. For international applicants, actual salary offers and benefit plans may vary based on the local market compensation ...",
+      "source_url": "https://bonterra.wd1.myworkdayjobs.com/bonterratech/job/Remote-United-States/Senior-Data-Engineer_R2025-0387",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://bonterra.wd1.myworkdayjobs.com/bonterratech/job/Remote-United-States/Senior-Data-Engineer_R2025-0387",
+      "analysis": {
+        "job_index": 10,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Engenheiro de Dados Sênior",
+        "empresa": "Bonterra",
+        "pais": "EUA",
+        "setor": "tech",
+        "salario_usd_mes": 11250,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 5,
+          "descricao": "Experiência em engenharia de dados e disposição para trabalhar remotamente nos EUA."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave--7686932505722908151",
+      "title": "Workday",
+      "company": "Godirect",
+      "description": "Voya Financial, Inc. (NYSE: VOYA), is a leading health, wealth and investment company with approximately 9,000 employees who are focused on achieving Voya’s aspirational vision: Clearing your path to financial confidence and a more fulfilling life. Through products, solutions and technologies, ...",
+      "source_url": "https://godirect.wd5.myworkdayjobs.com/en-US/voya_jobs/details/job/United-States-Remote/Lead-Financial-and-Reporting-Analyst_JR0031311",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://godirect.wd5.myworkdayjobs.com/en-US/voya_jobs/details/job/United-States-Remote/Lead-Financial-and-Reporting-Analyst_JR0031311",
+      "analysis": {
+        "job_index": 11,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Analista Financeiro e de Relatórios Líder",
+        "empresa": "Godirect",
+        "pais": "EUA",
+        "setor": "business",
+        "salario_usd_mes": 9000,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 5,
+          "descricao": "Experiência em finanças e relatórios, com foco em Workday, para trabalho remoto nos EUA."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave--4706971088708627320",
+      "title": "Frontend Design Engineer",
+      "company": "Volarisgroup",
+      "description": "Job Summary: WebCheckout is seeking a Front-End Design Engineer to lead the modernization of our web applications and improve user experiences. We are looking for a seasoned developer with a blend of technical expertise and strong design ...",
+      "source_url": "https://wd3.myworkdaysite.com/recruiting/volarisgroup/Webcheckout/job/United-States---TX/Frontend-Design-Engineer_R58778",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://wd3.myworkdaysite.com/recruiting/volarisgroup/Webcheckout/job/United-States---TX/Frontend-Design-Engineer_R58778",
+      "analysis": {
+        "job_index": 12,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Engenheiro de Design Frontend",
+        "empresa": "Volarisgroup",
+        "pais": "EUA",
+        "setor": "tech",
+        "salario_usd_mes": 8000,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 5,
+          "descricao": "Experiência em desenvolvimento frontend e design para modernização de aplicações web nos EUA."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave-8635932379907973359",
+      "title": "United States Bowling Congress is looking for Application Developer.",
+      "company": "Bowl",
+      "description": "Information Technology Arlington, Texas United States · Apply · JOB TITLE: Application Developer · POSITION TYPE: Full-Time · FLSA STATUS: Exempt · EMPLOYER: USBC · DEPARTMENT: Information Technology (2503) REPORTS TO: Application Development Manager ·",
+      "source_url": "https://jobs.jobvite.com/bowl/job/or8Gjfwi",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://jobs.jobvite.com/bowl/job/or8Gjfwi",
+      "analysis": {
+        "job_index": 13,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "Desenvolvedor de Aplicações",
+        "empresa": "Bowl",
+        "pais": "EUA",
+        "setor": "tech",
+        "salario_usd_mes": 7000,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 3,
+          "descricao": "Experiência em desenvolvimento de aplicações para trabalho remoto nos EUA."
+        },
+        "internacional_ok": true
+      }
+    },
+    {
+      "id": "brave--6536661078766672548",
+      "title": "Framestore - Freelance: CG - Chicago",
+      "company": "O",
+      "description": "Chicago, Illinois, United States · Advertising · Job detailsApply · Framestore Integrated Advertising are always on the look-out for exceptional talent to join our award winning team. If you are a freelancer who would be interested in being kept on our books for future freelancing opportunities with our team then please submit your details to us - we would love to hear from you!",
+      "source_url": "https://framestore.recruitee.com/o/freelance-cg-chicago",
+      "location": "",
+      "source": "brave",
+      "pt_hint": false,
+      "direct_url": "https://framestore.recruitee.com/o/freelance-cg-chicago",
+      "analysis": {
+        "job_index": 14,
+        "aprovada": true,
+        "motivo_rejeicao": null,
+        "titulo": "CG Freelancer",
+        "empresa": "O",
+        "pais": "EUA",
+        "setor": "artes",
+        "salario_usd_mes": 6000,
+        "salario_estimado": true,
+        "requisitos": {
+          "ingles": "fluente",
+          "faculdade": "nao_importa",
+          "experiencia_anos": 3,
+          "descricao": "Talento excepcional em CG para oportunidades de freelancer em Chicago, EUA."
+        },
+        "internacional_ok": true
+      }
+    }
+  ]
+}

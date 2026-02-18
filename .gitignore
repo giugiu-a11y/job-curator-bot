@@ -1,30 +1,8 @@
-# Environment
 .env
-*.env.local
-
-# Data
-data/
-*.db
-*.sqlite
-
-# Python
+.env.*
+!.env.example
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
+*.pyc
 venv/
-ENV/
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
+logs/
 *.log

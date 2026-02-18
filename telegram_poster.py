@@ -3,7 +3,9 @@ Job Curator Bot - Telegram Poster
 Posta vagas formatadas nos canais Free e Pago
 """
 import asyncio
+import json
 import logging
+from pathlib import Path
 from typing import Optional, List
 
 from telegram import Bot
@@ -21,18 +23,34 @@ from config import (
 
 logger = logging.getLogger(__name__)
 
+# Cache de empresas (carrega uma vez)
+EMPRESAS_CACHE_PATH = Path(__file__).parent / "data" / "empresas_cache.json"
+_empresas_cache = None
+
+def get_empresa_descricao(empresa_nome: str) -> str:
+    """Busca descrição da empresa no cache local."""
+    global _empresas_cache
+    if _empresas_cache is None:
+        try:
+            with open(EMPRESAS_CACHE_PATH, 'r', encoding='utf-8') as f:
+                _empresas_cache = json.load(f)
+        except:
+            _empresas_cache = {}
+    
+    # Busca case-insensitive
+    nome_lower = empresa_nome.lower().strip()
+    return _empresas_cache.get(nome_lower, "")
+
 
 def format_job_message(job: dict) -> str:
     """
     Formata a mensagem da vaga para o Telegram.
     
-    Formato:
-    🎯 Título da Vaga
-    🏢 Empresa
-    📁 Categoria | 🌍 Localização
+    Novo formato PT-BR:
+    🌍 Título da Vaga
+    🏢 Empresa: Nome — descrição do que faz
+    📍 Remoto | 🌎 País/Região
     💰 Salário (se disponível)
-    
-    📝 Resumo atraente
     
     🔗 Candidatar-se
     """
@@ -40,36 +58,26 @@ def format_job_message(job: dict) -> str:
     # Análise (se disponível)
     analysis = job.get('analysis_result', {})
     if isinstance(analysis, str):
-        import json
         try:
             analysis = json.loads(analysis)
         except:
             analysis = {}
     
-    # Emoji da categoria
-    category = analysis.get('categoria', job.get('category', 'Other'))
-    category_emoji = {
-        'Technology': '💻',
-        'Marketing': '📈',
-        'Design': '🎨',
-        'Operations': '⚙️',
-        'Sales': '💼',
-        'Healthcare': '🏥',
-        'Education': '📚',
-        'AI/ML': '🤖',
-        'Other': '📋',
-    }.get(category, '💼')
-    
-    # Título
+    # Título em português
     title = analysis.get('titulo_pt', job.get('title', 'Vaga Remota'))
     
-    # Empresa
+    # Empresa com descrição do cache
     company = analysis.get('empresa', job.get('company', 'Empresa Internacional'))
+    empresa_desc = get_empresa_descricao(company)
+    if empresa_desc:
+        empresa_linha = f"🏢 *Empresa:* {company} — {empresa_desc}"
+    else:
+        empresa_linha = f"🏢 *Empresa:* {company}"
     
-    # Localização
-    location = job.get('location', 'Remote/Worldwide')
-    if location and len(location) > 30:
-        location = location[:27] + '...'
+    # Localização simplificada
+    location = job.get('location', 'Worldwide')
+    if location and len(location) > 25:
+        location = location[:22] + '...'
     
     # Salário
     salary_str = ""
@@ -86,32 +94,14 @@ def format_job_message(job: dict) -> str:
     is_high = analysis.get('is_high_salary', False)
     high_badge = " 🔥" if is_high else ""
     
-    # Resumo
-    resumo = analysis.get('resumo_pt', '')
-    if not resumo and job.get('description'):
-        resumo = job['description'][:150] + '...' if len(job['description']) > 150 else job['description']
-    
-    # Tags
-    tags = analysis.get('tags', job.get('tags', []))
-    if tags and isinstance(tags, list):
-        tags_str = ' '.join([f"#{t.replace(' ', '')}" for t in tags[:3]])
-    else:
-        tags_str = ""
-    
     # Link
     link = job.get('direct_url') or job.get('source_url', '')
     
-    # Nível
-    nivel = analysis.get('nivel', '')
-    nivel_str = f" • {nivel}" if nivel and nivel != 'Qualquer' else ""
-    
-    # Monta mensagem
-    message = f"{category_emoji} *{title}*{high_badge}\n"
-    message += f"🏢 {company}\n"
-    message += f"📁 {category}{nivel_str} | 🌍 {location}"
+    # Monta mensagem (formato limpo, sem resumo para economizar)
+    message = f"🌍 *{title}*{high_badge}\n"
+    message += f"{empresa_linha}\n"
+    message += f"📍 Remoto | 🌎 {location}"
     message += salary_str
-    message += f"\n\n_{resumo}_" if resumo else ""
-    message += f"\n\n{tags_str}" if tags_str else ""
     message += f"\n\n🔗 [Candidatar-se]({link})"
     
     return message

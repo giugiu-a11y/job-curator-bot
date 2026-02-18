@@ -5,11 +5,11 @@
 
 ---
 
-## ✅ CHECKLIST DIÁRIO
+## ✅ CHECKLIST SEMANAL (COLETA) + DIÁRIO (POSTAGEM)
 
-### ENTRADA (Descoberta)
-- [ ] Scrapers rodando (RemoteOK, WWR, Himalayas, LinkedIn, etc)
-- [ ] Vagas sendo coletadas de múltiplas fontes
+### ENTRADA (Descoberta) — 1x/semana
+- [ ] Brave Search com orçamento limitado (`BRAVE_BUDGET`)
+- [ ] Fontes: Remotive, Landing.jobs, WWR, RemoteOK, Jobicy, WorkingNomads, Himalayas
 - [ ] ⚠️ **Não importa de onde vem — importa a saída**
 
 ### PROCESSAMENTO (Pré-filtro)
@@ -36,10 +36,14 @@
 - [ ] Área: Diversificar (não só Tech)
 - [ ] Qualidade: Profissional, não golpe?
 
-### FILA (Regra 75/25)
-- [ ] FREE: 5 vagas/dia
-  - [ ] 3-4 vagas > $4k
-  - [ ] 1-2 vagas < $4k
+### FILA (Semanal)
+- [ ] Pool salvo em `data/batch_ready.json`
+- [ ] Posts prontos em `data/telegram_posts.txt`
+- [ ] Fila com ponteiro em `data/post_queue.json`
+
+### ENTREGA (Diário)
+- [ ] FREE: 3 vagas/dia (09:00, 15:00, 21:00 UTC)
+- [ ] PAGO: (futuro)
 - [ ] PAGO: 30 vagas/dia
   - [ ] ~22-23 vagas > $4k
   - [ ] ~7-8 vagas < $4k
@@ -59,9 +63,7 @@
   - [ ] ❌ Nunca: indeed.com, linkedin.com, remoteok.com, weworkremotely.com
 
 ### HISTÓRIA (Reutilização)
-- [ ] Vagas não usadas hoje → Salvar com data
-- [ ] Amanhã: Re-testar link (ainda funciona?)
-- [ ] Se tá vivo → Reutilizar, se 404 → Descartar
+- [ ] Se a fila acabar → rodar coleta semanal novamente
 
 ---
 

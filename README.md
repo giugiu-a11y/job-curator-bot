@@ -60,6 +60,9 @@ cp .env.example .env
 nano .env  # Preencha suas chaves
 ```
 
+Inclua a chave do Brave para descoberta automática:
+`BRAVE_API_KEY` (ou `BRAVE_SEARCH_API_KEY`).
+
 ### 3. Build e Run
 
 ```bash

@@ -1,0 +1,41 @@
+# =============================================================================
+# VAGAS REMOTAS PAGO - 30 vagas/dia (~1 a cada 34min)
+# =============================================================================
+# ATIVAR APENAS QUANDO MESTRE DISSER "vamos começar"
+# =============================================================================
+
+# Bloco 1: 09:00-14:00 UTC (06:00-11:00 BRT) - 9 vagas
+0 9 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+34 9 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+8 10 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+42 10 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+16 11 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+50 11 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+24 12 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+58 12 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+32 13 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+
+# Bloco 2: 14:00-19:00 UTC (11:00-16:00 BRT) - 9 vagas
+6 14 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+40 14 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+14 15 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+48 15 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+22 16 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+56 16 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+30 17 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+4 18 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+38 18 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+
+# Bloco 3: 19:00-02:00 UTC (16:00-23:00 BRT) - 12 vagas
+12 19 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+46 19 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+20 20 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+54 20 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+28 21 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+2 22 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+36 22 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+10 23 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+44 23 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+18 0 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+52 0 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1
+26 1 * * * cd /home/ubuntu/projects/job-curator-bot && ./post_paid.sh >> logs/paid.log 2>&1

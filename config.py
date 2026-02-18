@@ -116,6 +116,11 @@ AGGREGATOR_DOMAINS = [
     'remoteok.com',
     'weworkremotely.com',
     'himalayas.app',
+    'remotive.com',
+    'workingnomads.com',
+    'jobicy.com',
+    'landing.jobs',
+    'jobtarget.com',
 ]
 
 # =============================================================================
@@ -128,5 +133,5 @@ USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTM
 # =============================================================================
 # GEMINI
 # =============================================================================
-GEMINI_MODEL = 'gemini-2.0-flash'
+GEMINI_MODEL = 'gemini-2.5-flash-lite'
 GEMINI_DELAY = 10  # segundos entre chamadas (rate limiting - devagar para não estourar)
